@@ -36,12 +36,14 @@ function Assignments() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    const form = e.currentTarget;
     const formData = new FormData(e.currentTarget);
     const title = formData.get("title");
     const course_code = formData.get("courseCode");
     const due_date = formData.get("dueDate");
     const details = formData.get("details");
 
+    console.log({ title, course_code, due_date });
     if (!title || !course_code || !due_date) return;
 
     const { data, error } = await supabase
@@ -59,7 +61,7 @@ function Assignments() {
     if (error) console.error("Error adding assignment:", error);
     else {
       setAssignments((prev) => [...prev, data]);
-      e.currentTarget.reset();
+      form.reset();
     }
   }
 

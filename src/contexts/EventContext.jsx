@@ -62,12 +62,13 @@ function EventProvider({ children }) {
   }, []);
 
   async function addEvent(formObject) {
+    console.log("addEvent called", formObject);
     const { data, error } = await supabase
       .from("events")
       .insert({
         title: formObject.title,
-        from_date: formObject.from,
-        to_date: formObject.to,
+        from_date: formObject.from_date,
+        to_date: formObject.to_date,
         type: formObject.type,
       })
       .select()

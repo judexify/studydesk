@@ -17,12 +17,13 @@ function Schedule() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    console.log("submit fired");
     const formData = new FormData(e.currentTarget);
 
     const newEvent = {
       title: formData.get("title"),
-      from: formData.get("from"),
-      to: formData.get("to"),
+      from_date: formData.get("from"),
+      to_date: formData.get("to"),
       type: formData.get("type"),
     };
 
