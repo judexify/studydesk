@@ -1,0 +1,145 @@
+.nextLectureWrapper {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  min-width: 10rem;
+}
+
+.lecture-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lecture-nav-title {
+  font-size: 1.6rem;
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
+}
+
+.lecture-nav-buttons {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.lecture-nav-buttons button {
+  background-color: var(--bg-card-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+}
+
+.lecture-nav-buttons button:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-card-elevated);
+}
+
+.lecture-nav-buttons button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nextLecture-track {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 calc(-0px);
+}
+
+.nextLecture {
+  display: flex;
+  gap: var(--space-md);
+  transition: transform 0.3s ease;
+}
+
+.lecture-card {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 0;
+  flex: 0 0 calc(50% - var(--space-md) / 2);
+  box-sizing: border-box;
+}
+
+.lecture-card.currentActive {
+  border-color: var(--nav-link-active);
+  background-color: rgba(91, 141, 239, 0.06);
+}
+
+.lecture-card.notActive {
+  opacity: 0.5;
+}
+
+.lecture-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lecture-time {
+  color: var(--nav-link-active);
+  font-weight: 600;
+}
+
+.lecture-lecturer {
+  color: var(--nav-link-active);
+  font-style: italic;
+}
+.course-code {
+  font-size: 1.4rem;
+  font-weight: var(--fw-semi);
+  color: var(--nav-link-active);
+}
+
+.course-day {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  background-color: var(--bg-card-hover);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+}
+
+.course-title {
+  font-size: 1.4rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.lecture-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.course-time {
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  color: var(--success);
+}
+
+.course-lecturer {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .lecture-card {
+    min-width: 100%;
+  }
+}

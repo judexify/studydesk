@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+  /* ── Font ── */
+  --font: "Rubik", sans-serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+
+  /* ── Backgrounds ── */
+  --bg-body: #161b27; /* main content area */
+  --bg-sidebar: #0f1117; /* sidebar */
+  --bg-card: #1e2535; /* cards, inputs */
+  --bg-card-hover: #252d3d; /* hovered or elevated cards */
+
+  /* ── Navigation ── */
+  --nav-link: #8b95a1; /* default nav link color */
+  --nav-link-active: #5b8def; /* active nav link color */
+  --nav-link-hover: #c8d0dc; /* hovered nav link */
+  --nav-active-bg: rgba(91, 141, 239, 0.12); /* active link background pill */
+
+  /* ── Buttons ── */
+  --btn-bg: #5b8def; /* primary button background */
+  --btn-text: #ffffff; /* primary button text */
+  --btn-hover: #4a7de0; /* primary button hover */
+  --btn-ghost: transparent; /* ghost button background */
+  --btn-ghost-border: rgba(255, 255, 255, 0.12); /* ghost button border */
+  --btn-ghost-text: #c8d0dc; /* ghost button text */
+
+  /* ── Text ── */
+  --text-primary: #ffffff; /* headings, important values */
+  --text-secondary: #c8d0dc; /* body text, descriptions */
+  --text-muted: #8b95a1; /* labels, placeholders, hints */
+
+  /* ── Border ── */
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* ── Status ── */
+  --success: #34c759; /* stress low  / done */
+  --success-dim: rgba(52, 199, 89, 0.14);
+  --warning: #ff9f0a; /* stress mid  / due soon */
+  --warning-dim: rgba(255, 159, 10, 0.14);
+  --danger: #ff453a; /* stress high / urgent */
+  --danger-dim: rgba(255, 69, 58, 0.14);
+
+  /* ── Spacing ── */
+  --space-xs: 0.4rem; /* 4px */
+  --space-sm: 0.8rem; /* 8px */
+  --space-md: 1.6rem; /* 16px */
+  --space-lg: 2.4rem; /* 24px */
+  --space-xl: 3.2rem; /* 32px */
+
+  /* ── Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ── Transition ── */
+  --transition: 0.2s ease;
+
+  --sidebar-width: 24rem;
+}
+
+/* ── Reset ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: var(--fw-regular);
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-sidebar);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card-hover);
+  border-radius: var(--radius-pill);
+}

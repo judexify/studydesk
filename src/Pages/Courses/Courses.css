@@ -1,0 +1,98 @@
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  gap: var(--space-md);
+  padding: var(--space-md);
+}
+
+.courseCardLink {
+  text-decoration: none;
+  display: block;
+}
+
+.courseCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.courseCard:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.courseCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseCode {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--btn-bg);
+  letter-spacing: 0.04em;
+}
+
+.courseUnits {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  background: rgba(91, 141, 239, 0.1);
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--radius-pill);
+}
+
+.courseTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.courseCardFooter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  margin-top: auto;
+}
+
+.courseLecturer {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.courseScheduleInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.courseDay {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.courseTime {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+.courses-offered {
+  font-size: 2.6rem;
+}
+
+@media (max-width: 768px) {
+  .coursesGrid {
+    grid-template-columns: 1fr;
+    padding: var(--space-sm);
+  }
+}

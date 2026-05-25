@@ -1,0 +1,43 @@
+.logout-module {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-xl);
+  justify-content: flex-end;
+  background-color: var(--bg-body);
+}
+
+.logout-module img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.logout-module span {
+  font-size: 1.4rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-secondary);
+}
+
+.logout-module button {
+  background: var(--btn-ghost);
+  border: 1px solid var(--btn-ghost-border);
+  border-radius: var(--radius-md);
+  color: var(--btn-ghost-text);
+  font-family: var(--font);
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  padding: var(--space-xs) var(--space-md);
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.logout-module button:hover {
+  background-color: var(--danger-dim);
+  color: var(--danger);
+  border-color: var(--danger);
+}

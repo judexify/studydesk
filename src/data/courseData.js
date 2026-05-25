@@ -1,0 +1,73 @@
+export const courseData = {
+  400: {
+    level: 400,
+    semester: "Harmattan",
+    stream: 3,
+    session: "May/Aug 2026",
+    courses: [
+      {
+        code: "ECE 421",
+        title: "Digital Electronics",
+        units: 3,
+        lecturer: "Dr Monsurat Balogun",
+        schedule: [{ day: "Saturday", start: "08:00", end: "09:30" }],
+      },
+      {
+        code: "ECE 431",
+        title: "Electromagnetic Fields and Waves II",
+        units: 2,
+        lecturer: "Dr Abdulwaheed Musa",
+        schedule: [{ day: "Saturday", start: "09:30", end: "11:00" }],
+      },
+      {
+        code: "ECE 441",
+        title: "Control Engineering I",
+        units: 3,
+        lecturer: "Dr Olalekan Ogunbiyi",
+        schedule: [{ day: "Saturday", start: "11:00", end: "12:30" }],
+      },
+      {
+        code: "ECE 445",
+        title: "Assembly Language Programming",
+        units: 2,
+        lecturer: "Dr Monsurat Balogun",
+        schedule: [{ day: "Friday", start: "16:30", end: "18:00" }],
+      },
+      {
+        code: "ECE 451",
+        title: "Principles of Communication Engineering",
+        units: 3,
+        lecturer: "Dr AbdulRahman Isa",
+        schedule: [{ day: "Saturday", start: "14:00", end: "15:30" }],
+      },
+      {
+        code: "ECE 471",
+        title: "Electric Power Principles",
+        units: 3,
+        lecturer: "Prof Lambe Mutalub",
+        schedule: [{ day: "Friday", start: "15:00", end: "16:30" }],
+      },
+      {
+        code: "ECE 481",
+        title: "Laboratory Course and Mini Project III",
+        units: 1,
+        lecturer: "Lab",
+        schedule: [],
+      },
+      {
+        code: "CEE 485",
+        title: "Civil Engineering Practice",
+        units: 2,
+        lecturer: "TBA",
+        schedule: [{ day: "Saturday", start: "15:30", end: "17:00" }],
+      },
+      {
+        code: "GET 463",
+        title: "Engineering Statistics",
+        units: 2,
+        lecturer: "Prof Fadeyibi Adesina",
+        schedule: [{ day: "Saturday", start: "12:30", end: "14:00" }],
+      },
+    ],
+  },
+};

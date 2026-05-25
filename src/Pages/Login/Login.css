@@ -1,0 +1,126 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-body);
+  padding: var(--space-md);
+  gap: var(--space-lg);
+}
+
+.login-desc h1 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 2.8rem;
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
+}
+
+.login-desc h1 span {
+  color: var(--nav-link-active);
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  width: 100%;
+  max-width: 44rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.row label {
+  font-size: 1.4rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-secondary);
+}
+
+.row input {
+  width: 100%;
+  background-color: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font);
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.row input:focus {
+  border-color: var(--nav-link-active);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: color var(--transition);
+}
+
+.password-wrapper button:hover {
+  color: var(--text-secondary);
+}
+
+.password-wrapper input {
+  padding-right: 3.6rem;
+}
+
+.form > div:last-child button {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.form > div:last-child button:hover {
+  background-color: var(--btn-hover);
+}
+.loginError {
+  font-size: 1.2rem;
+  color: var(--danger);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: var(--space-lg);
+  }
+
+  .login-desc h1 {
+    font-size: 2.4rem;
+  }
+}

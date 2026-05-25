@@ -1,0 +1,213 @@
+.assignmentsPage {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.assignmentForm {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.assignmentFormTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.assignmentForm select,
+.assignmentForm input[type="text"],
+.assignmentForm input[type="date"],
+.assignmentForm textarea {
+  background: var(--bg-body);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1.3rem;
+  resize: vertical;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.assignmentForm select:focus,
+.assignmentForm input:focus,
+.assignmentForm textarea:focus {
+  outline: none;
+  border-color: var(--btn-bg);
+}
+
+.dueDateLabel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.assignmentForm button[type="submit"] {
+  align-self: flex-start;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-md);
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.assignmentForm button[type="submit"]:hover {
+  background: var(--btn-hover);
+}
+s .assignmentLists {
+  display: flex;
+  /* flex-direction: column; */
+  gap: var(--space-lg);
+}
+
+.assignmentGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.assignmentGroupTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* .assignmentGroupTitle.pending {
+  /* color: var(--warning); */
+/* } */
+/* .assignmentGroupTitle.overdue { */
+/* color: var(--danger); */
+/* } */
+/* .assignmentGroupTitle.submitted { */
+/* color: var(--success); */
+/* } */
+
+.assignmentEmpty {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.assignmentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.assignmentCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  border-left: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.assignmentCard:hover {
+  background: var(--bg-card-hover);
+}
+.assignmentCard.pending {
+  border-left-color: var(--warning);
+}
+.assignmentCard.overdue {
+  border-left-color: var(--danger);
+}
+.assignmentCard.submitted {
+  border-left-color: var(--success);
+  opacity: 0.7;
+}
+
+.assignmentCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assignmentCourse {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--btn-bg);
+}
+
+.assignmentDue {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.assignmentTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.assignmentDetails {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.assignmentCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-xs);
+}
+
+.submitToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.submitToggle input[type="checkbox"] {
+  accent-color: var(--success);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.deleteAssignmentBtn {
+  background: transparent;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  padding: var(--space-xs);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.deleteAssignmentBtn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .assignmentsPage {
+    padding: var(--space-sm);
+  }
+}

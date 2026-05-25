@@ -1,0 +1,74 @@
+.courses-section {
+  padding: var(--space-lg) var(--space-xl);
+}
+
+.courses-section h2 {
+  font-size: 1.6rem;
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+}
+
+.courses-table thead tr {
+  background-color: var(--bg-card);
+}
+
+.courses-table th {
+  text-align: left;
+  padding: var(--space-md) var(--space-lg);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted);
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+.courses-table td {
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.courses-table tbody tr:nth-child(odd) {
+  background-color: var(--bg-card);
+}
+
+.courses-table tbody tr:nth-child(even) {
+  background-color: var(--bg-card-hover);
+}
+
+.courses-table tbody tr:hover {
+  background-color: rgba(91, 141, 239, 0.06);
+  cursor: pointer;
+}
+
+.courses-table tbody tr td:nth-child(2) {
+  color: var(--nav-link-active);
+  font-weight: var(--fw-medium);
+}
+
+.total-row td {
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
+  border-top: 2px solid var(--border);
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .courses-section {
+    padding: var(--space-md);
+    overflow-x: auto;
+  }
+
+  .courses-table th,
+  .courses-table td {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 1.2rem;
+  }
+}

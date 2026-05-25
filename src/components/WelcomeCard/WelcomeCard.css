@@ -1,0 +1,100 @@
+.welcomeCard-wrapper {
+  padding: var(--space-xl) var(--space-xl) var(--space-lg);
+}
+
+.welcomeCard {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-xl) 0 var(--space-xl);
+  gap: 9.6rem;
+  overflow: visible;
+  position: relative;
+  min-height: 5rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 0 1 auto;
+  padding-bottom: var(--space-xl);
+}
+
+.username {
+  font-size: 2.8rem;
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
+  line-height: 1.2;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.username span {
+  color: var(--nav-link-active);
+}
+
+.card-text p {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.card-text button {
+  align-self: flex-start;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: var(--font);
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-lg);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.card-text button:hover {
+  background-color: var(--btn-hover);
+}
+
+.card-visual {
+  flex-shrink: 0;
+  width: 15rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+
+.card-visual img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(-1rem);
+}
+
+@media (max-width: 768px) {
+  .welcomeCard-wrapper {
+    padding: var(--space-md);
+  }
+
+  .welcomeCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-lg);
+    overflow: hidden;
+  }
+
+  .card-visual {
+    width: 100%;
+    max-width: 22rem;
+    align-self: center;
+  }
+
+  .card-visual img {
+    transform: translateY(0);
+  }
+}
